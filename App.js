@@ -1,29 +1,22 @@
+import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import "@/global.css";
 import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider/index";
 import { StyleSheet, View } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-import { Text } from "react-native";
-// import { NativeBaseProvider, extendTheme } from "native-base";
-
-// Define una configuración personalizada para NativeBase
-// const config = {
-//   suppressColorAccessibilityWarning: true,
-//   // Deshabilita las advertencias de SSRProvider
-//   useRNUILib: false
-// };
-
-// Extiende el tema predeterminado
-// const theme = extendTheme({ config });
+import { HandlerNavigation } from "./src/navigations";
+import { NativeBaseProvider } from "native-base";
 
 export default function App() {
   return (
     <NavigationContainer>
-      <GluestackUIProvider mode="light">
-        <View style={styles.container}>
-          <Text>AppChat</Text>
-          <StatusBar style="auto" />
-        </View>
+      <GluestackUIProvider>
+        <NativeBaseProvider>
+          <View style={styles.container}>
+            <HandlerNavigation />
+            <StatusBar style="auto" />
+          </View>
+        </NativeBaseProvider>
       </GluestackUIProvider>
     </NavigationContainer>
   );
@@ -33,7 +26,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    width: '100%',
+    height: '100%',
   },
 });
