@@ -262,7 +262,7 @@ npx expo start --tunnel
 - **Botón de Acción**: "Iniciar sesión"
 - **Diseño**: Interfaz limpia con fondo blanco y tipografía azul
 
-![Pantalla 1 - Inicio](src/screenshots/pantalla1.jpg)
+![Pantalla 1 - Inicio](src/screenshots/Pantalla1.jpg)
 
 ### Pantalla de Login (LoginScreen):
 - **Formulario de Acceso**: Pantalla para iniciar sesión
@@ -272,7 +272,7 @@ npx expo start --tunnel
 - **Navegación**: Botón de regreso circular en la esquina superior izquierda
 - **Header**: Barra superior azul con título centrado
 
-![Pantalla 2 - Login](src/screenshots/pantalla2.jpg)
+![Pantalla 2 - Login](src/screenshots/Pantalla2.jpg)
 
 ### Pantalla Principal de Notas (NotesListScreen):
 - **Lista de Notas**: Visualización de todas las notas activas
