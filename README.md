@@ -284,7 +284,7 @@ npx expo start --tunnel
   - **Ajustes** (icono de engrane) - Gris inactivo
 - **Diseño**: Fondo blanco con elementos centrados
 
-![Pantalla 3 - Lista de Notas](src/screenshots/pantalla3.jpg)
+![Pantalla 3 - Lista de Notas](src/screenshots/Pantalla3.jpg)
 
 ### Pantalla de Editor de Notas (NoteEditorScreen):
 - **Modo Crear/Editar**: Editor para nueva nota o modificar existente
